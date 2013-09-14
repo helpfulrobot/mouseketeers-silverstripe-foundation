@@ -1,0 +1,23 @@
+{
+    "name": "silverstripe-themes/foundation",
+    "description": "The SilverStripe simple theme (default SilverStripe 3 theme)",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Sara Tušar (Innovaif)",
+            "homepage": "http://www.saratusar.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type":"vcs",
+            "url":"/home/marek/dev/sf2-bundles/TheodoRogerCmsBundle"
+        }
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": ">=2.4"
+    }
+}

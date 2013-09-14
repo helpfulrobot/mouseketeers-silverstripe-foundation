@@ -1,0 +1,23 @@
+// SilverStrip specific styles shared by app.css and editor.css
+img{
+	&.right {
+		float:right;
+		margin: 0 0 18px 18px;
+	}
+	&.left {
+		float:left;
+		margin: 0 18px 18px 0px;
+		background-color: red;
+	}
+	&.leftAlone {
+		margin: 0 18px 18px 0;
+		float: none;
+		display: block;
+		clear: both;
+	}
+	&.center {
+		display:block;
+		margin: 0 auto 18px auto;
+		clear: both;
+	}
+}

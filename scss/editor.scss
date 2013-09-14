@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import	"settings", "foundation/variables","foundation/components/global";
+.typography {
+	@import	"foundation/components/type",
+			"foundation/components/buttons",
+			"foundation/components/tables",
+			"foundation/components/thumbs",
+			"silverstripe-typography";
+}
+body.mceContentBody {
+	background-color: $body-bg;
+	font-size: $base-font-size;
+	min-height: 200px;
+	margin:18px;
+}
