@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import "normalize","settings","silverstripe-typography","foundation";
+
+body {
+	//prevent horizontal page jumping
+	overflow-y:scroll;
+}
+header {
+	#logo {
+		padding:10px 0;
+	}
+}
+.alert-box {
+  @include radius($global-radius);
+}
+
+form fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+form ul {
+	margin:0;
+	padding:0;
+}
+form label {
+	display:inline-block;
+}
+form ul li {
+	list-style:none;
+}
+form label.left {
+	float:none !important;
+}
+form label.right {
+	float:none !important;
+}
+form .optionset > label,
+form .checkboxset > label,
+form .dropdown > label {
+	font-weight:600;
+}
+form .Actions input { 
+	@include button($radius: true);
+}
+form label.required, form .message.required {
+	@include alert-base;
+	@include alert-style($alert-color);
+	@include radius($global-radius);
+	margin-top:-.8em;
+}
+form .optionset input {
+	margin-bottom:0;
+}
+form .optionset, form .checkboxset {
+	margin-bottom:$form-spacing;
+}
