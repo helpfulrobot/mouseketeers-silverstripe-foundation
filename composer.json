@@ -1,23 +1,21 @@
 {
-    "name": "silverstripe-themes/foundation",
-    "description": "The SilverStripe simple theme (default SilverStripe 3 theme)",
-    "type": "silverstripe-theme",
-    "keywords": ["silverstripe", "theme"],
-    "license": "BSD-3-Clause",
-    "authors": [
-        {
-            "name": "Sara Tušar (Innovaif)",
-            "homepage": "http://www.saratusar.com"
-        }
-    ],
-    "repositories": [
-        {
-            "type":"vcs",
-            "url":"/home/marek/dev/sf2-bundles/TheodoRogerCmsBundle"
-        }
-    ],
-    "require": {
-        "composer/installers": "*",
-        "silverstripe/framework": ">=2.4"
-    }
+	"name": "mouseketeers/silverstripe-foundation",
+	"description": "SilverStripe theme based on Zurb Foundation framework",
+	"type": "silverstripe-theme",
+	"keywords": ["silverstripe", "theme", "foundation"],
+	"license": "MIT Open Source License",
+	"authors": [
+		{
+			"name": "Henrik Olsen",
+			"homepage": "http://www.mouseketeers.dk",
+			"email": "henrik@mouseketeers.dk"
+		}
+	],
+	"require": {
+		"composer/installers": "*",
+		"silverstripe/framework": ">=2.4"
+	},
+	"extra": {
+		"installer-name": "foundation"
+	}
 }
