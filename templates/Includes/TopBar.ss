@@ -5,11 +5,11 @@
 			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 		</ul>
 		<section class="top-bar-section">
-			<ul <% if MenuPos %>class="$MenuPos"<% else %>class="right"<% end_if %>>
+			<ul class="right">
 				<% control Menu(1) %>
-				<li><a href="$Link">$MenuTitle</a>
+				<li <% if LinkingMode != link %>class="active"<% end_if %>><a href="$Link">$MenuTitle</a>
 				<% end_control %>
-			</ul>		
+			</ul>
 		</section>
 	</nav>
 </div>
