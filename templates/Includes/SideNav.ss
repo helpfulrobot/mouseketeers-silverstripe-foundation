@@ -24,7 +24,6 @@
 			<% end_if %>
 		</li>
 		<% end_control %>
-		<li class="divider"></li>
 	</ul>
 </nav>
 <% end_if %>

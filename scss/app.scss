@@ -1,5 +1,9 @@
 @charset "UTF-8";
-@import "normalize","settings","silverstripe-typography","foundation";
+
+@import "settings";
+@import "normalize";
+@import "foundation";
+@import "silverstripe-typography";
 
 body {
 	//prevent horizontal page jumping
@@ -11,47 +15,68 @@ header {
 	}
 }
 .alert-box {
-  @include radius($global-radius);
-}
-
-form fieldset {
-	border: 0;
-	margin: 0;
-	padding: 0;
-}
-form ul {
-	margin:0;
-	padding:0;
-}
-form label {
-	display:inline-block;
-}
-form ul li {
-	list-style:none;
-}
-form label.left {
-	float:none !important;
-}
-form label.right {
-	float:none !important;
-}
-form .optionset > label,
-form .checkboxset > label,
-form .dropdown > label {
-	font-weight:600;
-}
-form .Actions input { 
-	@include button($radius: true);
-}
-form label.required, form .message.required {
-	@include alert-base;
-	@include alert-style($alert-color);
 	@include radius($global-radius);
-	margin-top:-.8em;
 }
-form .optionset input {
-	margin-bottom:0;
+form {
+	fieldset {
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
+	ul {
+		margin:0;
+		padding:0;
+	}
+	ul li {
+		list-style:none;
+	}
+	label {
+		display:inline-block;
+	}
+	label.left {
+		float:none !important;
+	}
+	label.right {
+		float:none !important;
+	}
+	.optionset,
+	.checkboxset {
+		margin-bottom:$form-spacing;
+	}
+	.optionset > label,
+	.checkboxset > label,
+	.dropdown > label {
+		font-weight:600;
+	}
+	textarea {
+		height:auto; // foundation fix
+	}
+	.optionset input {
+		margin-bottom:0;
+	}
+	input.action {
+		@include button-base;
+		@include button-size;
+		@include button-style;
+		@include radius;
+		@include single-transition;
+		@include inset-shadow;
+	}
+	label.required, 
+	.message.required {
+		@include alert-base;
+		@include alert-style($alert-color);
+		@include radius($global-radius);
+		margin-top:-.8em;
+	}
 }
-form .optionset, form .checkboxset {
-	margin-bottom:$form-spacing;
+#SearchForm_SearchForm {
+	@include grid-row(nest);
+}
+#SearchForm_SearchForm #Search {
+	@include grid-column($columns:9);
+}
+#SearchForm_SearchForm_action_Results {
+	@include prefix-postfix-base;
+	@include grid-column($columns:3);
 }

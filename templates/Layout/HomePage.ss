@@ -1,7 +1,7 @@
 <% if Teasers %>
 <div class="row">
 	<div class="large-12 columns">
-		<ul class="large-block-grid-3">
+		<ul class="teasers large-block-grid-3 small-block-grid-1">
 			<% include Teasers %>
 		</ul>
 	</div>

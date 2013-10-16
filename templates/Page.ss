@@ -14,6 +14,7 @@
 	</head>
 	<body class="$ClassName" lang="$ContentLocale">
 		<div>
+			<% include CookieNotice %>
 			<header>
 				<div class="row">
 					<div class="large-12 columns">
@@ -33,34 +34,19 @@
 			<footer>
 				<div class="row">
 					<div class="large-12 columns">
-						<p>&copy; $Now.Year - $SiteConfig.Title</p>
+						<% include Address %>
 					</div>
 				</div>
 			</footer>
-		</div>
-		
+		</div>	
 		<script type="text/javascript" src="$ThemeDir/foundation/js/vendor/jquery.js"></script>
-		
-		<!--
-		<script type="text/javascript" src="$ThemeDir/foundation/js/foundation/foundation.js"></script>
-		<script type="text/javascript" src="$ThemeDir/foundation/js/foundation/foundation.alerts.js"></script>
-		<script type="text/javascript" src="$ThemeDir/foundation/js/foundation/foundation.clearing.js"></script>
-		<script type="text/javascript" src="$ThemeDir/foundation/js/foundation/foundation.cookie.js"></script>
-		<script type="text/javascript" src="$ThemeDir/foundation/js/foundation/foundation.dropdown.js"></script>
-		<script type="text/javascript" src="$ThemeDir/foundation/js/foundation/foundation.forms.js"></script>
-		<script type="text/javascript" src="$ThemeDir/foundation/js/foundation/foundation.joyride.js"></script>
-		<script type="text/javascript" src="$ThemeDir/foundation/js/foundation/foundation.orbit.js"></script>
-		<script type="text/javascript" src="$ThemeDir/foundation/js/foundation/foundation.placeholder.js"></script>
-		<script type="text/javascript" src="$ThemeDir/foundation/js/foundation/foundation.reveal.js"></script>
-		<script type="text/javascript" src="$ThemeDir/foundation/js/foundation/foundation.section.js"></script>
-		<script type="text/javascript" src="$ThemeDir/foundation/js/foundation/foundation.topbar.js"></script>
-		<script type="text/javascript" src="$ThemeDir/foundation/js/foundation/foundation.interchange.js"></script>
-		-->
-
 		<script type="text/javascript" src="$ThemeDir/javascript/foundation.min.js"></script>
 		<script type="text/javascript">$(document).foundation();</script>
 		
+		<script type="text/javascript" src="$ThemeDir/javascript/respond/respond.min.js"></script>
 		<script type="text/javascript" src="$ThemeDir/javascript/app.js"></script>
+		
+		<% include GoogleAnalytics %>
 	</body>
 </html>
 
