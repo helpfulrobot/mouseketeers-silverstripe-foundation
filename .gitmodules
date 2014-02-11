@@ -1,6 +1,3 @@
 [submodule "foundation"]
 	path = foundation
 	url = https://github.com/zurb/foundation.git
-[submodule "javascript/respond"]
-	path = javascript/respond
-	url = https://github.com/scottjehl/Respond.git
